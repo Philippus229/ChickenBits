@@ -1,7 +1,7 @@
 from bitstring import BitArray
 from tkinter.filedialog import askopenfilename
 
-fn = askopenfilename(filetypes =(("ChickenBits File", "*.cbit"),("All Files","*.*")), title = "Select a chickenBit file")
+fn = askopenfilename(filetypes =(("ChickenBits File", "*.cbit"),("All Files","*.*")), title = "Select a ChickenBits file")
 f = open(fn, 'rb')
 bit_array = BitArray(bytes=f.read())
 bit_string = bit_array.bin
